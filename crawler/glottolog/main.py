@@ -29,7 +29,7 @@ for language in languages:
     id_tronco = None
     id_localidade = None
     if(family_name and family_name!="Unattested" and family_name!="Unclassifiable"):
-        troncos = requests.get(f"{HOST}/tronco").json()
+        troncos = requests.get(f"{HOST}/troncos").json()
         for tronco in troncos:
             if(tronco['nome'] == family_name):
                 id_tronco = tronco['id_tronco']
@@ -44,7 +44,7 @@ for language in languages:
         if(not id_localidade):
             create_localidade = requests.post(f"{HOST}/localidade", data=json.dumps({'latitude': language_latitude, 'longitude': language_longitude}), headers={'content-type': 'application/json'})
             id_localidade = create_localidade.json()['id_localidade']
-    create_lingua = requests.post(f"{HOST}/lingua", data=json.dumps({'nome': language_name, 'id_tronco': id_tronco}), headers={'content-type': 'application/json'}).json()
+    create_lingua = requests.post(f"{HOST}/linguas", data=json.dumps({'nome': language_name, 'id_tronco': id_tronco}), headers={'content-type': 'application/json'}).json()
     create_idioma = requests.post(f"{HOST}/idioma", data=json.dumps({'id_localidade': id_localidade, 'id_lingua': create_lingua['id_lingua']}), headers={'content-type': 'application/json'})
     print(create_idioma.text)
 

@@ -5,7 +5,7 @@ import time
 HOST = 'https://multilind-content-stagging.herokuapp.com'
 HOST_FILES = 'http://localhost:5000/api/files/'
 API_KEY = '563492ad6f917000010000013a3ea2a8854b4982a72e0e8cdd0b2413'
-linguas_response = requests.get(f"{HOST}/lingua")
+linguas_response = requests.get(f"{HOST}/linguas")
 linguas = linguas_response.json()
 error = None
 for lingua in linguas:

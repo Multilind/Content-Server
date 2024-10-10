@@ -6,7 +6,7 @@ import pandas as pd
 import json
 import time
 
-HOST = 'https://multilind-content-stagging.herokuapp.com'
+HOST = 'http://localhost:8000'
 if(not path.exists("huntergatherer-master")):
     download_url = "https://github.com/lexibank/huntergatherer/archive/refs/heads/master.zip"
     filename = 'master.zip'
@@ -14,7 +14,7 @@ if(not path.exists("huntergatherer-master")):
     open(filename, 'wb').write(response.content)
     shutil.unpack_archive(filename, './')
 languages_dir = 'languages.csv'
-linguas = requests.get(f'{HOST}/lingua').json()
+linguas = requests.get(f'{HOST}/linguas').json()
 languages_csv = pd.read_csv(languages_dir, delimiter=',')
 jsons_dir = "huntergatherer-master/raw/"
 for lingua in linguas:

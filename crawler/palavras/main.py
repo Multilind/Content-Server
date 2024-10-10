@@ -3,12 +3,12 @@ import pandas as pd
 import requests
 import json
 
-HOST = "https://multilind-content-stagging.herokuapp.com"
+HOST = "http://localhost:8000"
 
 csv = pd.read_csv('palavras_anari.csv')
 index = list(csv.columns)[1:]
-troncos = requests.get(f"{HOST}/tronco").json()
-linguas = requests.get(f"{HOST}/lingua").json()
+troncos = requests.get(f"{HOST}/troncos").json()
+linguas = requests.get(f"{HOST}/linguas").json()
 palavras = csv['Palavra em Português']
 print(palavras)
 for i in index:

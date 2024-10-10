@@ -38,7 +38,7 @@ describe("Testes Lingua", () => {
 
     });
     it("Lingua - 200 - listando com sucesso - Todos", async () => {
-      const result = await supertest(app).get("/lingua");
+      const result = await supertest(app).get("/linguas");
 
       expect(result.status).toStrictEqual(200);
     });

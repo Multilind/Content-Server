@@ -4,6 +4,7 @@ from selenium import webdriver
 import os
 import time
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.service import Service 
 from selenium.webdriver.common.by import By
 import re
 import requests
@@ -14,23 +15,24 @@ def create_browser():
     #chrome_options.binary_location = os.environ['GOOGLE_CHROME_BIN'] #export GOOGLE_CHROME_BIN='/usr/bin/google-chrome'
     chrome_options.add_argument('--headless')
     chrome_options.add_argument("--disable-gpu")
-    chrome_options.add_argument("--no-sandbox") #bypass OS security model
-    chrome_options.add_argument("--disable-dev-shm-usage") #overcome limited resource problems
+    chrome_options.add_argument("--no-sandbox")  # bypass OS security model
+    chrome_options.add_argument("--disable-dev-shm-usage")  # overcome limited resource problems
     #chrome_options.add_argument("--shm-size=1024m")
-    
-    
+
     chrome_options.add_experimental_option("prefs", {
-      "download.default_directory": os.path.abspath(os.path.curdir)+"/downloads",
-      "download.directory_upgrade": True,
-      "safebrowsing.enabled": True
+        "download.default_directory": os.path.abspath(os.path.curdir) + "/downloads",
+        "download.directory_upgrade": True,
+        "safebrowsing.enabled": True
     })
-    browser = webdriver.Chrome(chrome_options=chrome_options, executable_path=ChromeDriverManager().install())
+
+    # Use the Service class and pass it to webdriver.Chrome
+    service = Service(ChromeDriverManager().install())
+    browser = webdriver.Chrome(service=service, options=chrome_options)
     
-    print("Done Creating Browser")
     return browser
 
 
-HOST = "https://multilind-content-stagging.herokuapp.com"
+HOST = "https://localhost:8000"
 
 
 #mudar pra http se der problema
@@ -52,7 +54,7 @@ for link in links:
 ids_funai = list(dict.fromkeys(ids_funai))
 for funai_id in ids_funai:
     #mudar pra http se der problema
-    etnia_url = f"https://sii.funai.gov.br/funai_sii/informacoes_indigenas/visao/povos_indigenas.wsp?tmp.edt.etnia_codigo={funai_id}"
+    etnia_url = f"http://sii.funai.gov.br/funai_sii/informacoes_indigenas/visao/povos_indigenas.wsp?tmp.edt.etnia_codigo={funai_id}"
     browser.get(etnia_url)
     time.sleep(1)
     etnia_regex = r"<td>\n+\s+([A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ\s´^~äëïöüÄËÏÖÜ-]+)\n+\s+<\/td>"
@@ -75,7 +77,7 @@ for funai_id in ids_funai:
         tronco_name = lingua_familia_tronco[2]
     except:
         ...
-    troncos = requests.get(f"{HOST}/tronco").json()
+    troncos = requests.get(f"{HOST}/troncos").json()
     tronco_escolhido = tronco_name if not familia_name else familia_name
     id_tronco = None
     id_lingua = None
@@ -87,7 +89,7 @@ for funai_id in ids_funai:
             create_tronco = requests.post(f"{HOST}/tronco", data=json.dumps({'nome': tronco_escolhido}), headers={'content-type': 'application/json'})
             print(create_tronco.text)
             id_tronco = create_tronco.json()['id_tronco']
-    print('ID Funai: '+funai_id)
+    print('ID Funai: '+ funai_id)
     print('Etnia: ')
     print(etnia)
     if(not etnia):
@@ -95,7 +97,7 @@ for funai_id in ids_funai:
     print('Língua: ')
     print(lingua_name)
     if(lingua_name!='Desconhecida'):
-        linguas = requests.get(f"{HOST}/lingua").json()
+        linguas = requests.get(f"{HOST}/linguas").json()
         for lingua in linguas:
             if(lingua['nome'] == lingua_name):
                 id_lingua = lingua['id_lingua']

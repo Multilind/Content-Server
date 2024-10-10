@@ -46,7 +46,7 @@ describe("Testes Tronco", () => {
    
     });
     it("Tronco - 200 - listando com sucesso - Todos", async () => {
-      const result = await supertest(app).get("/tronco");
+      const result = await supertest(app).get("/troncos");
 
       expect(result.status).toStrictEqual(200);
       expect(result.body.length).toBeTruthy();

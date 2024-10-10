@@ -9,8 +9,8 @@ import localidadeRouters from "./Localidade/localidade.routes";
 export function setUpRoutes(app) {
   app.use("/etnia", etniaRouters);
   app.use("/palavra", palavraRouters);
-  app.use("/lingua", linguaRouters);
-  app.use("/tronco", troncoRouters);
+  app.use("/linguas", linguaRouters);
+  app.use("/troncos", troncoRouters);
   app.use("/dialeto", dialetoRouters);
   app.use("/localidade", localidadeRouters);
   app.use("/idioma", idiomaRouters);
