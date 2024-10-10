@@ -3,6 +3,6 @@ require("regenerator-runtime/runtime");
 require("./Lingua");
 require("./Etnia");
 require("./Palavra");
-require("./tronco");
+require("./Familia");
 require("./Localidade");
 require("./Idioma");

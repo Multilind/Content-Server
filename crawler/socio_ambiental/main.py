@@ -5,11 +5,11 @@ html = requests.get('https://pib.socioambiental.org/pt/L%C3%ADnguas').text
 soup = BeautifulSoup(html, 'html.parser')
 tables = soup.find_all('table')
 for table in tables:
-    #capturando o tronco
+    #capturando o familia
     try:
-        tronco = re.match(r".*[tT]ronco ([\w\-ê]+)", str(table.caption)).group(1)
+        familia = re.match(r".*[tT]ronco ([\w\-ê]+)", str(table.caption)).group(1)
     except:
-        tronco = None
+        familia = None
     headers = table.find_all('th')[1:]
     #capturando linguas
     linguas = []
@@ -28,7 +28,7 @@ for table in tables:
         significados = fix_significado.split(', ')
         for significado in significados:
             print('SIGNIFICADO: '+significado)
-            print('TRONCO: '+str(tronco))
+            print('TRONCO: '+str(familia))
             print('LINGUAS: ')
             for i in range(0, len(celulas)):
                 print(linguas[i] + ' = ' + celulas[i].i.text)

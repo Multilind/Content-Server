@@ -61,34 +61,34 @@ for funai_id in ids_funai:
     etnia = None
     if(re.search(etnia_regex, browser.page_source)):
         etnia = re.search(etnia_regex, browser.page_source).group(1)
-    lingua_familia_tronco_regex = r'<td valign=\"top\">([A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ-]+)<\/td>'
-    tronco_regex = r"<td><strong>Tronco Linguístico: </strong></td>"
+    lingua_familia_regex = r'<td valign=\"top\">([A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ-]+)<\/td>'
+    familia_regex = r"<td><strong>Familia Linguístico: </strong></td>"
     familia_regex = r"<td><strong>Família Linguística:</strong></td>"
     lingua_regex = r"<td><strong>Língua:</strong></td>"
-    lingua_familia_tronco = re.findall(lingua_familia_tronco_regex, browser.page_source)
+    lingua_familia_familia = re.findall(lingua_familia_regex, browser.page_source)
     print('length: ')
-    print(len(lingua_familia_tronco))
+    print(len(lingua_familia_familia))
     lingua_name = None
     familia_name = None
-    tronco_name = None
+    familia_name = None
     try:
-        lingua_name = lingua_familia_tronco[0]
-        familia_name = lingua_familia_tronco[1]
-        tronco_name = lingua_familia_tronco[2]
+        lingua_name = lingua_familia_familia[0]
+        familia_name = lingua_familia_familia[1]
+        familia_name = lingua_familia_familia[2]
     except:
         ...
-    troncos = requests.get(f"{HOST}/troncos").json()
-    tronco_escolhido = tronco_name if not familia_name else familia_name
-    id_tronco = None
+    familias = requests.get(f"{HOST}/familias").json()
+    familia_escolhido = familia_name if not familia_name else familia_name
+    id_familia = None
     id_lingua = None
-    if tronco_escolhido:
-        for tronco in troncos:
-            if(tronco['nome'] == tronco_escolhido):
-                id_tronco = tronco['id_tronco']
-        if(not id_tronco):
-            create_tronco = requests.post(f"{HOST}/tronco", data=json.dumps({'nome': tronco_escolhido}), headers={'content-type': 'application/json'})
-            print(create_tronco.text)
-            id_tronco = create_tronco.json()['id_tronco']
+    if familia_escolhido:
+        for familia in familias:
+            if(familia['nome'] == familia_escolhido):
+                id_familia = familia['id_familia']
+        if(not id_familia):
+            create_familia = requests.post(f"{HOST}/familia", data=json.dumps({'nome': familia_escolhido}), headers={'content-type': 'application/json'})
+            print(create_familia.text)
+            id_familia = create_familia.json()['id_familia']
     print('ID Funai: '+ funai_id)
     print('Etnia: ')
     print(etnia)
@@ -103,7 +103,7 @@ for funai_id in ids_funai:
                 id_lingua = lingua['id_lingua']
             
         if(not id_lingua):
-            create_lingua = requests.post(f"{HOST}/lingua", data=json.dumps({'nome': lingua_name, 'id_tronco': id_tronco}), headers={'content-type': 'application/json'})
+            create_lingua = requests.post(f"{HOST}/lingua", data=json.dumps({'nome': lingua_name, 'id_familia': id_familia}), headers={'content-type': 'application/json'})
             id_lingua = create_lingua.json()['id_lingua']
             print(create_lingua.text)
     create_etnia = requests.post(f"{HOST}/etnia", data=json.dumps({'nome': etnia}), headers={'content-type': 'application/json'})

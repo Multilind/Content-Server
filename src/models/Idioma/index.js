@@ -2,7 +2,7 @@ const IdiomaModel = require("./Idioma");
 const Conteudo = require("../Conteudo");
 const LocalidadeModel = require("../Localidade/Localidade");
 const LinguaModel = require("../Lingua/Lingua");
-const TroncoModel = require("../Tronco/Tronco");
+const FamiliaModel = require("../Familia/Familia");
 const EtniaModel = require("../Etnia/Etnia");
 
 exports.create = async (idioma) => {
@@ -22,9 +22,9 @@ exports.searchAll = async (query) => {
         attributes: ["id_lingua", "nome"],
         include: [
           {
-            model: TroncoModel,
-            as: "tronco",
-            attributes: ["id_tronco", "nome"],
+            model: FamiliaModel,
+            as: "familia",
+            attributes: ["id_familia", "nome"],
           },
           { model: EtniaModel, as: "etnia" },
         ],

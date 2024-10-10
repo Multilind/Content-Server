@@ -7,26 +7,26 @@ HOST = "http://localhost:8000"
 
 csv = pd.read_csv('palavras_anari.csv')
 index = list(csv.columns)[1:]
-troncos = requests.get(f"{HOST}/troncos").json()
+familias = requests.get(f"{HOST}/familias").json()
 linguas = requests.get(f"{HOST}/linguas").json()
 palavras = csv['Palavra em Português']
 print(palavras)
 for i in index:
     id_lingua = None
-    id_tronco = None
+    id_familia = None
     lingua, familia = i.split('/')
     if(len(familia)>0):
-        for tronco in troncos:
-            if(tronco['nome'] == familia):
-                id_tronco = tronco['id_tronco']
-        if(not id_tronco):
-            create_tronco = requests.post(f"{HOST}/tronco", data=json.dumps({'nome': familia}), headers={'content-type': 'application/json'})
-            id_tronco = create_tronco.json()['id_tronco']
+        for familia in familias:
+            if(familia['nome'] == familia):
+                id_familia = familia['id_familia']
+        if(not id_familia):
+            create_familia = requests.post(f"{HOST}/familia", data=json.dumps({'nome': familia}), headers={'content-type': 'application/json'})
+            id_familia = create_familia.json()['id_familia']
     for l in linguas:
         if l['nome'] == lingua:
             id_lingua = l['id_lingua']
     if(not id_lingua):
-        create_lingua = requests.post(f"{HOST}/lingua", data=json.dumps({'nome': lingua, 'id_tronco': id_tronco}), headers={'content-type': 'application/json'}).json()
+        create_lingua = requests.post(f"{HOST}/lingua", data=json.dumps({'nome': lingua, 'id_familia': id_familia}), headers={'content-type': 'application/json'}).json()
         id_lingua = create_lingua['id_lingua']
     row = 0
     for palavra in palavras:

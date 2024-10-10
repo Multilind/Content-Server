@@ -25,17 +25,17 @@ for language in languages:
             family_details = family_response.json()
             if(family_details['pk'] == language_family_pk):
                 family_name = family_details['name']
-                print(f"Tronco: {family_details['name']}")
-    id_tronco = None
+                print(f"Familia: {family_details['name']}")
+    id_familia = None
     id_localidade = None
     if(family_name and family_name!="Unattested" and family_name!="Unclassifiable"):
-        troncos = requests.get(f"{HOST}/troncos").json()
-        for tronco in troncos:
-            if(tronco['nome'] == family_name):
-                id_tronco = tronco['id_tronco']
-        if(not id_tronco):
-            create_tronco = requests.post(f"{HOST}/tronco", data=json.dumps({'nome': family_name}), headers={'content-type': 'application/json'})
-            id_tronco = create_tronco.json()['id_tronco']
+        familias = requests.get(f"{HOST}/familias").json()
+        for familia in familias:
+            if(familia['nome'] == family_name):
+                id_familia = familia['id_familia']
+        if(not id_familia):
+            create_familia = requests.post(f"{HOST}/familia", data=json.dumps({'nome': family_name}), headers={'content-type': 'application/json'})
+            id_familia = create_familia.json()['id_familia']
     if(language_latitude and language_longitude):
         localidades = requests.get(f"{HOST}/localidade").json()
         for localidade in localidades:
@@ -44,7 +44,7 @@ for language in languages:
         if(not id_localidade):
             create_localidade = requests.post(f"{HOST}/localidade", data=json.dumps({'latitude': language_latitude, 'longitude': language_longitude}), headers={'content-type': 'application/json'})
             id_localidade = create_localidade.json()['id_localidade']
-    create_lingua = requests.post(f"{HOST}/linguas", data=json.dumps({'nome': language_name, 'id_tronco': id_tronco}), headers={'content-type': 'application/json'}).json()
+    create_lingua = requests.post(f"{HOST}/linguas", data=json.dumps({'nome': language_name, 'id_familia': id_familia}), headers={'content-type': 'application/json'}).json()
     create_idioma = requests.post(f"{HOST}/idioma", data=json.dumps({'id_localidade': id_localidade, 'id_lingua': create_lingua['id_lingua']}), headers={'content-type': 'application/json'})
     print(create_idioma.text)
 

@@ -18,12 +18,12 @@ module.exports = {
           onUpdate: "CASCADE",
           onDelete: "CASCADE",
         },
-        id_tronco: {
+        id_familia: {
           type: Sequelize.DataTypes.INTEGER,
           allowNull: true,
           references: {
-            model: "Tronco",
-            key: "id_tronco",
+            model: "Familia",
+            key: "id_familia",
           },
           onUpdate: "RESTRICT",
           onDelete: "RESTRICT",

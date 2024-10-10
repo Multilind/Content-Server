@@ -1,6 +1,6 @@
 const databaseConfig = require("../../config/database");
 const Conteudo = require("../Conteudo/Conteudo");
-const Tronco = require("../Tronco/Tronco");
+const Familia = require("../Familia/Familia");
 
 const { Sequelize, DataTypes } = require("sequelize");
 const sequelize = new Sequelize(databaseConfig);
@@ -14,12 +14,12 @@ const Lingua = sequelize.define(
       primaryKey: true,
       allowNull: false,
     },
-    id_tronco: {
+    id_familia: {
       type: DataTypes.INTEGER,
       allowNull: true,
       references: {
-        model: "Tronco",
-        key: "id_tronco",
+        model: "Familia",
+        key: "id_familia",
       },
       onUpdate: "SET NULL",
       onDelete: "SET NULL",
@@ -57,18 +57,18 @@ Lingua.hasOne(Conteudo, {
   onUpdate: "CASCADE",
   sourceKey: "id_conteudo",
 });
-Lingua.hasOne(Tronco, {
-  foreignKey: "id_tronco",
+Lingua.hasOne(Familia, {
+  foreignKey: "id_familia",
   onDelete: "RESTRICT",
   onUpdate: "RESTRICT",
-  sourceKey: "id_tronco",
-  as: "tronco",
+  sourceKey: "id_familia",
+  as: "familia",
 });
-Tronco.hasMany(Lingua, {
-  foreignKey: "id_tronco",
+Familia.hasMany(Lingua, {
+  foreignKey: "id_familia",
   onDelete: "RESTRICT",
   onUpdate: "RESTRICT",
-  sourceKey: "id_tronco",
+  sourceKey: "id_familia",
   as: "linguas",
 });
 module.exports = Lingua;

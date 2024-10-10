@@ -1,5 +1,5 @@
 const LinguaModel = require("./Lingua");
-const TroncoModel = require("../Tronco/Tronco");
+const FamiliaModel = require("../Familia/Familia");
 const Conteudo = require("../Conteudo");
 
 exports.searchByName = async (nome) => {
@@ -20,9 +20,9 @@ exports.searchById = async (id) => {
     attributes: ["id_lingua", "id_conteudo", "nome"],
     include: [
       {
-        model: TroncoModel,
-        as: "tronco",
-        attributes: ["id_tronco", "nome"],
+        model: FamiliaModel,
+        as: "familia",
+        attributes: ["id_familia", "nome"],
       },
     ],
   });
@@ -33,9 +33,9 @@ exports.searchAll = async () => {
     nest: true,
     include: [
       {
-        model: TroncoModel,
-        as: "tronco",
-        attributes: ["id_tronco", "nome"],
+        model: FamiliaModel,
+        as: "familia",
+        attributes: ["id_familia", "nome"],
       },
     ],
   });

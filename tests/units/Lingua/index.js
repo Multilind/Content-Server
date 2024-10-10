@@ -54,7 +54,7 @@ describe("\n## TESTES LINGUA\n", () => {
         id_lingua: 1,
         id_conteudo: 3,
         nome: "Aikanã",
-        tronco: null,
+        familia: null,
       });
     });
     it("Listando com metodo searchByID(2)", async () => {
@@ -63,7 +63,7 @@ describe("\n## TESTES LINGUA\n", () => {
         id_lingua: 2,
         id_conteudo: 4,
         nome: "Aikewara",
-        tronco: null,
+        familia: null,
       });
     });
   });

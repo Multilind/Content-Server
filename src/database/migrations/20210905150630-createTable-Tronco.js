@@ -6,8 +6,8 @@ module.exports = {
   up: async (queryInterface, Sequelize) => {
     const transaction = await queryInterface.sequelize.transaction();
     try {
-      await queryInterface.createTable("Tronco", {
-        id_tronco: PrimaryKey(Sequelize),
+      await queryInterface.createTable("Familia", {
+        id_familia: PrimaryKey(Sequelize),
         id_conteudo: {
           type: Sequelize.DataTypes.INTEGER,
           allowNull: false,
@@ -28,6 +28,6 @@ module.exports = {
   },
 
   down: async (queryInterface) => {
-    await queryInterface.dropTable("Tronco");
+    await queryInterface.dropTable("Familia");
   },
 };
