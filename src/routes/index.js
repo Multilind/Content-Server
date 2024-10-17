@@ -11,7 +11,7 @@ export function setUpRoutes(app) {
   app.use("/palavra", palavraRouters);
   app.use("/linguas", linguaRouters);
   app.use("/familias", familiaRouters);
-  app.use("/dialeto", dialetoRouters);
-  app.use("/localidade", localidadeRouters);
-  app.use("/idioma", idiomaRouters);
+  app.use("/dialetos", dialetoRouters);
+  app.use("/localidades", localidadeRouters);
+  app.use("/idiomas", idiomaRouters);
 }
