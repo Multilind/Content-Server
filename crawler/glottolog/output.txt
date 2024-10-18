@@ -1,4 +1,3 @@
-323
 Língua: Mato Grosso Arára
 Posição Geográfica: -9.172609 -60.628867
 Língua: Kanoê
@@ -40,196 +39,196 @@ Posição Geográfica: -2.000259 -72.257066
 Familia: Boran
 Língua: Kepkiriwát
 Posição Geográfica: -11.663 -61.246
-Familia: Tupian
+Familia: Tupi
 Língua: Suruí
 Posição Geográfica: -11.0989 -61.2818
-Familia: Tupian
+Familia: Tupi
 Língua: Salamãi
 Posição Geográfica: -12.0499 -61.25
-Familia: Tupian
-Língua: Aruá (Rondonia State)
+Familia: Tupi
+Língua: Aruá (Rondônia)
 Posição Geográfica: -12.1186 -62.4357
-Familia: Tupian
+Familia: Tupi
 Língua: Gavião Do Jiparaná
 Posição Geográfica: -10.7235 -61.6752
-Familia: Tupian
+Familia: Tupi
 Língua: Cinta Larga
 Posição Geográfica: -10.5879 -60.8312
-Familia: Tupian
+Familia: Tupi
 Língua: Jurúna
 Posição Geográfica: -10.9354 -53.3472
-Familia: Tupian
+Familia: Tupi
 Língua: Xipaya
 Posição Geográfica: -4.133 -49.948
-Familia: Tupian
+Familia: Tupi
 Língua: Maritsauá
 Posição Geográfica: -11.5833 -53.9667
-Familia: Tupian
+Familia: Tupi
 Língua: Kuruáya
 Posição Geográfica: -3.09561 -52.2303
-Familia: Tupian
+Familia: Tupi
 Língua: Mundurukú
 Posição Geográfica: -8.41095 -57.691
-Familia: Tupian
+Familia: Tupi
 Língua: Makuráp
 Posição Geográfica: -11.8701 -64.3201
-Familia: Tupian
+Familia: Tupi
 Língua: Mekens
 Posição Geográfica: -13.054 -62.0927
-Familia: Tupian
+Familia: Tupi
 Língua: Akuntsu
 Posição Geográfica: -12.8322 -60.9716
-Familia: Tupian
+Familia: Tupi
 Língua: Tuparí
 Posição Geográfica: -11.8884 -62.2544
-Familia: Tupian
+Familia: Tupi
 Língua: Wayoró
 Posição Geográfica: -12.6945 -61.3064
-Familia: Tupian
+Familia: Tupi
 Língua: Sateré-Mawé
 Posição Geográfica: -3.63897 -56.8749
-Familia: Tupian
+Familia: Tupi
 Língua: Awetí
 Posição Geográfica: -12.381944 -53.391944
-Familia: Tupian
+Familia: Tupi
 Língua: Kamayurá
 Posição Geográfica: -12.2661 -53.4651
-Familia: Tupian
+Familia: Tupi
 Língua: Karipúna
 Posição Geográfica: -10.2006 -64.2807
-Familia: Tupian
+Familia: Tupi
 Língua: Kayabí
 Posição Geográfica: -11.2747 -55.5479
-Familia: Tupian
+Familia: Tupi
 Língua: Apiaká
 Posição Geográfica: -7.84711 -57.91
-Familia: Tupian
+Familia: Tupi
 Língua: Uru-Eu-Wau-Wau
 Posição Geográfica: -10.9176 -63.8086
-Familia: Tupian
+Familia: Tupi
 Língua: Amundava
 Posição Geográfica: -9.04023 -62.3064
-Familia: Tupian
+Familia: Tupi
 Língua: Wiraféd
 Posição Geográfica: -9.30537 -59.4769
-Familia: Tupian
+Familia: Tupi
 Língua: Júma
 Posição Geográfica: -7.27501 -64.0998
-Familia: Tupian
+Familia: Tupi
 Língua: Paranawát
 Posição Geográfica: -9.34239 -59.053
-Familia: Tupian
+Familia: Tupi
 Língua: Tenharim-Parintintin-Diahoi
 Posição Geográfica: -7.92626 -61.936
-Familia: Tupian
+Familia: Tupi
 Língua: Diahói
 Posição Geográfica: -7.9939 -62.1936
-Familia: Tupian
+Familia: Tupi
 Língua: Nhengatu
 Posição Geográfica: 1.04503 -66.9646
-Familia: Tupian
+Familia: Tupi
 Língua: Lingua Geral Paulista
 Posição Geográfica: -23.95 -46.38
-Familia: Tupian
+Familia: Tupi
 Língua: Tupinambá
 Posição Geográfica: -22.807778 -42.106389
-Familia: Tupian
+Familia: Tupi
 Língua: Cocama-Cocamilla
 Posição Geográfica: -4.5 -74
-Familia: Tupian
+Familia: Tupi
 Língua: Omagua
 Posição Geográfica: -3.526 -69.1667
-Familia: Tupian
+Familia: Tupi
 Língua: Potiguára
 Posição Geográfica: -7.01666 -38
-Familia: Tupian
+Familia: Tupi
 Língua: Tupinikin
 Posição Geográfica: -19 -40.4167
-Familia: Tupian
+Familia: Tupi
 Língua: Xetá
 Posição Geográfica: -24.9408 -52.2266
-Familia: Tupian
+Familia: Tupi
 Língua: Mbyá Guaraní
 Posição Geográfica: -26.0188 -52.711
-Familia: Tupian
+Familia: Tupi
 Língua: Pai Tavytera
 Posição Geográfica: -23.15945 -56.11758
-Familia: Tupian
+Familia: Tupi
 Língua: Chiripá
 Posição Geográfica: -25.6521 -55.051
-Familia: Tupian
+Familia: Tupi
 Língua: Kaiwá
 Posição Geográfica: -24.589 -54.6815
-Familia: Tupian
+Familia: Tupi
 Língua: Tapirapé
 Posição Geográfica: -10.5373 -50.5438
-Familia: Tupian
+Familia: Tupi
 Língua: Suruí Do Pará
 Posição Geográfica: -5.9271 -48.588
-Familia: Tupian
+Familia: Tupi
 Língua: Parakanã
 Posição Geográfica: -4.64681 -50.0621
-Familia: Tupian
+Familia: Tupi
 Língua: Tocantins Asurini
 Posição Geográfica: -3.59359 -49.8991
-Familia: Tupian
+Familia: Tupi
 Língua: Turiwára
 Posição Geográfica: -2 -49.5
-Familia: Tupian
+Familia: Tupi
 Língua: Tenetehara
 Posição Geográfica: -2.6123 -48.2359
-Familia: Tupian
+Familia: Tupi
 Língua: Guajajára
 Posição Geográfica: -4.69461 -45.7081
-Familia: Tupian
+Familia: Tupi
 Língua: Urubú-Kaapor
 Posição Geográfica: -2.46455 -46.2204
-Familia: Tupian
+Familia: Tupi
 Língua: Avá-Canoeiro
 Posição Geográfica: -13.6081 -48.1336
-Familia: Tupian
+Familia: Tupi
 Língua: Tacunyape
 Posição Geográfica: -4.562946 -53.750438
-Familia: Tupian
+Familia: Tupi
 Língua: Guajá
 Posição Geográfica: -3.93574 -46.3683
-Familia: Tupian
+Familia: Tupi
 Língua: Aurê y Aurá
 Posição Geográfica: -4.137 -46.792
-Familia: Tupian
+Familia: Tupi
 Língua: Wayampi
 Posição Geográfica: 1.73817 -52.6887
-Familia: Tupian
+Familia: Tupi
 Língua: Zo'é
 Posição Geográfica: -1.77208 -55.50746
-Familia: Tupian
+Familia: Tupi
 Língua: Xingú Asuriní
 Posição Geográfica: -4.13463 -52.321
-Familia: Tupian
+Familia: Tupi
 Língua: Araweté
 Posição Geográfica: -4.90246 -52.5001
-Familia: Tupian
+Familia: Tupi
 Língua: Amanayé
 Posição Geográfica: -3.79772 -48.6613
-Familia: Tupian
+Familia: Tupi
 Língua: Anambé
 Posição Geográfica: -2.71119 -49.303
-Familia: Tupian
+Familia: Tupi
 Língua: Puruborá
 Posição Geográfica: -11.4226 -62.4358
-Familia: Tupian
-Língua: Karo (Brazil)
+Familia: Tupi
+Língua: Karo
 Posição Geográfica: -10.3342 -61.5691
-Familia: Tupian
+Familia: Tupi
 Língua: Urumi
 Posição Geográfica: -9.08 -63.848
-Familia: Tupian
+Familia: Tupi
 Língua: Arikem
 Posição Geográfica: -8.924 -63.742
-Familia: Tupian
+Familia: Tupi
 Língua: Karitiâna
 Posição Geográfica: -9.37937 -64.1522
-Familia: Tupian
+Familia: Tupi
 Língua: Urupa
 Posição Geográfica: -10.25 -62.75
 Familia: Chapacuran
@@ -268,97 +267,97 @@ Posição Geográfica: 0.58622 -69.8359
 Familia: Naduhup
 Língua: Karajá
 Posição Geográfica: -11.1881 -50.3492
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Ofayé
 Posição Geográfica: -22.278 -53.7227
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Rikbaktsa
 Posição Geográfica: -11.1887 -58.1942
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Djeoromitxí
 Posição Geográfica: -12.038 -64.6694
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Arikapú
 Posição Geográfica: -12.4878 -62.7261
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Gueren
 Posição Geográfica: -17.726974 -39.61441
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Krenak
 Posição Geográfica: -18.9988 -41.2299
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Geico
 Posição Geográfica: -6.56 -43
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Ingain
 Posição Geográfica: -24.621052 -54.254151
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Xokleng
 Posição Geográfica: -26.9217 -49.5886
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Kaingang
 Posição Geográfica: -27.7671 -52.5394
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: São Paulo Kaingáng
 Posição Geográfica: -21.771882 -50.429849
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Panará
 Posição Geográfica: -10.58 -53
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Suyá
 Posição Geográfica: -11.5178 -53.0743
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Kayapó
 Posição Geográfica: -7.77352 -51.6737
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Apinayé
 Posição Geográfica: -6.10774 -47.6315
-Familia: Nuclear-Macro-Je
-Língua: Northeastern Timbira
+Familia: Macro-Jê
+Língua: Timbira
 Posição Geográfica: -4.199179 -44.8295387
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Canela-Krahô
 Posição Geográfica: -6.10712 -45.1299
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Pará-Maranhão Gavião
 Posição Geográfica: -4.91161 -49.0217
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Krahô
 Posição Geográfica: -8.01172 -47.5774
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Pykobjê
 Posição Geográfica: -5.94252 -46.7504
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Acroá
 Posição Geográfica: -12.594 -40.21445
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Xakriabá
 Posição Geográfica: -19 -47
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Xerénte
 Posição Geográfica: -9.59426 -48.2629
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Xavánte
 Posição Geográfica: -14.3017 -52.4367
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Malali
 Posição Geográfica: -16.833987 -42.282716
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Pataxó Hã-Ha-Hãe
 Posição Geográfica: -15.9167 -40.0333
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Koropó
 Posição Geográfica: -21.3907 -42.716
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Macuni
 Posição Geográfica: -17.904785 -39.809418
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Capoxo
 Posição Geográfica: -16.766667 -42.033333
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Maxakalí
 Posição Geográfica: -16.9402 -40.7891
-Familia: Nuclear-Macro-Je
+Familia: Macro-Jê
 Língua: Masacara
 Posição Geográfica: -17 -41.5
 Familia: Kamakanan
@@ -388,77 +387,77 @@ Posição Geográfica: -20.5899 -58.2005
 Familia: Zamucoan
 Língua: Kaxararí
 Posição Geográfica: -9.47288 -66.3329
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Tuxináwa
 Posição Geográfica: -9.74999 -69.0167
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Cashinawa of the Tarauacá river
 Posição Geográfica: -7.5 -70.25
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Nawa
 Posição Geográfica: -7.68 -72
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Poyanáwa
 Posição Geográfica: -7.46909 -73.0758
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Nukuini
 Posição Geográfica: -7.339 -73.5044
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Remo of the Jaquirana river
 Posição Geográfica: -6.679339 -73.235779
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Cashinahua
 Posição Geográfica: -9.72027 -71.1733
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Amahuaca
 Posição Geográfica: -10.2012 -72.3208
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Yaminahua
 Posição Geográfica: -9.8846 -71.5964
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Yawanawa
 Posição Geográfica: -8.87563 -71.8199
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Sharanahua
 Posição Geográfica: -9.8626 -71.1232
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Shanenawa
 Posição Geográfica: -8.00919 -73.3264
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Panoan Katukína
 Posição Geográfica: -7.97456 -71.56151
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Marúbo
 Posição Geográfica: -6.60703 -72.4027
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Karipuna
 Posição Geográfica: -10 -65.5
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Mayoruna-Tabatinga
 Posição Geográfica: -4.289992 -69.873963
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Matís
 Posição Geográfica: -4.3553 -70.2079
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Mayoruna-Jandiatuba
 Posição Geográfica: -4.979863 -70.038757
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Mayoruna-Amazon
 Posição Geográfica: -4.322858 -70.280457
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Kulina Pano
 Posição Geográfica: -6.17715 -72.0438
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Demushbo
 Posição Geográfica: -4.837565 -70.873718
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Matsés
 Posição Geográfica: -5.73914 -72.6281
-Familia: Pano-Tacanan
+Familia: Pano-Tacana
 Língua: Korubo
 Posição Geográfica: -5.3655 -70.5094
-Familia: Pano-Tacanan
-Língua: Aruá (Amazonas State)
+Familia: Pano-Tacana
+Língua: Aruá (Amazonas)
 Posição Geográfica: -5.5 -67.98
 Familia: Arawan
 Língua: Suruahá
