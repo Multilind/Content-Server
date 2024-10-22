@@ -7,7 +7,7 @@ def get_family_id(family_name):
         for family in families:
             if family['nome'] == family_name:
                 return family['id_familia']
-    return None  # Family not found
+    return None
 
 def create_family(family_name):
     payload = {
@@ -18,27 +18,27 @@ def create_family(family_name):
         return response.json().get('id_familia')
     else:
         print(f"Failed to create family '{family_name}': {response.text}")
-        return None  # Failed to create family
+        return None 
 
 def parse_lingua_data(lines):
     lingua = {}
-    current_family = None  # Track the current family
+    current_family = None
 
     for line in lines:
         if line.startswith("Língua:"):
-            if lingua:  # If there is already a lingua, yield it before starting a new one
+            if lingua:
                 yield lingua, current_family
                 lingua = {}
             lingua["nome"] = line.split(":", 1)[1].strip()
         elif line.startswith("Posição Geográfica:"):
             posicao = line.split(":", 1)[1].strip()
             latitude, longitude = posicao.split()
-            lingua["latitude"] = float(latitude)  # Convert latitude to float
-            lingua["longitude"] = float(longitude)  # Convert longitude to float
+            lingua["latitude"] = float(latitude)
+            lingua["longitude"] = float(longitude)
         elif line.startswith("Familia:"):
-            current_family = line.split(":", 1)[1].strip()  # Update the current family
+            current_family = line.split(":", 1)[1].strip()
 
-    if lingua:  # Yield the last collected lingua if there is one
+    if lingua:
         yield lingua, current_family
 
 def main():
@@ -46,13 +46,11 @@ def main():
         lines = file.readlines()
 
     for lingua_data, current_family in parse_lingua_data(lines):
-        # Get or create family ID
         if current_family:
             id_familia = get_family_id(current_family)
             if id_familia is None:
                 id_familia = create_family(current_family)
 
-        # Prepare the payload for creating a new lingua
         lingua_payload = {
             "nome": lingua_data["nome"],
         }
@@ -60,7 +58,6 @@ def main():
         lingua_response = requests.post('http://localhost:8000/linguas', json=lingua_payload)
         print('Lingua Response:', lingua_response.json())
 
-        # Add a new localidade if latitude and longitude are valid
         if 'latitude' in lingua_data and 'longitude' in lingua_data:
             localidade_payload = {
                 "latitude": lingua_data["latitude"],
@@ -70,9 +67,8 @@ def main():
             localidade_response = requests.post('http://localhost:8000/localidades', json=localidade_payload)
             print('Localidade Response:', localidade_response.json())
 
-            # Connect a lingua with a localidade
-            id_lingua = lingua_response.json().get('id')  # Get the ID of the created lingua
-            id_localidade = localidade_response.json().get('id')  # Get the ID of the created localidade
+            id_lingua = lingua_response.json().get('id')
+            id_localidade = localidade_response.json().get('id')
 
             if id_lingua and id_localidade:
                 idioma_payload = {
